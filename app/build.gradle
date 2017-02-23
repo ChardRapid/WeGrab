@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        debug {
+            storeFile file("E:\\Android\\SDK\\qcute.jks")
+            storePassword "qcute.tk"
+            keyAlias "qcute.tk"
+            keyPassword "qcute.tk"
+        }
+        release {
+            storeFile file("E:\\Android\\SDK\\qcute.jks")
+            storePassword "qcute.tk"
+            keyAlias "qcute.tk"
+            keyPassword "qcute.tk"
+        }
+    }
+
+    compileSdkVersion 24
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "tk.qcute.wegrab"
+        minSdkVersion 21
+        targetSdkVersion 24
+        versionCode 7
+        versionName "1.0.0 RC 2"
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    provided files('libs/XposedBridgeApi-82.jar')
+    compile 'com.android.support:appcompat-v7:24.2.1'
+}

@@ -1,0 +1,99 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/pref_wechat">
+
+        <SwitchPreference
+            android:key="wechat_open"
+            android:title="@string/pref_wechat_open"
+            android:defaultValue="true" />
+
+        <SwitchPreference
+            android:key="wechat_self"
+            android:title="@string/pref_wechat_self"
+            android:dependency="wechat_open"
+            android:defaultValue="false"/>
+
+        <SwitchPreference
+            android:key="wechat_mute"
+            android:title="@string/pref_wechat_mute"
+            android:dependency="wechat_open"
+            android:defaultValue="false"/>
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="@string/pref_qq">
+
+        <SwitchPreference
+            android:key="qq_open"
+            android:title="@string/pref_qq_open"
+            android:defaultValue="true" />
+
+        <SwitchPreference
+            android:key="qq_word"
+            android:title="@string/pref_qq_word"
+            android:defaultValue="false"
+            android:dependency="qq_open"/>
+
+        <SwitchPreference
+            android:key="qq_self"
+            android:title="@string/pref_qq_self"
+            android:defaultValue="false"
+            android:dependency="qq_open" />
+
+    </PreferenceCategory>
+
+
+    <!--
+        <PreferenceCategory android:title="@string/pref_hide_mode">
+            <SwitchPreference
+                android:key="newHide"
+                android:title="@string/pref_hide_new"
+                android:summary="@string/pref_hide_new_summary"
+                android:defaultValue="false"/>
+
+                    <SwitchPreference
+                        android:key="extremeHide"
+                        android:title="@string/pref_hide_extreme"
+                        android:summary="@string/pref_hide_extreme_summary"
+                        android:defaultValue="false"/>
+
+        </PreferenceCategory>
+    -->
+
+    <PreferenceCategory android:title="@string/pref_more">
+
+        <Preference
+            android:key="wechat_version"
+            android:title="@string/pref_wechat_version"
+            android:summary="@string/pref_wechat_version_summary" />
+
+        <Preference
+            android:key="qq_version"
+            android:title="@string/pref_qq_version"
+            android:summary="@string/pref_qq_version_summary" />
+
+        <Preference
+            android:key="wechat_tinker"
+            android:title="@string/pref_wechat_tinker"
+            android:summary="@string/pref_wechat_tinker_summary" />
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="@string/pref_about">
+
+        <Preference
+            android:key="agreement"
+            android:title="@string/pref_agreement"
+            android:summary="@string/pref_summary_agreement" />
+
+        <Preference
+            android:key="explain"
+            android:title="@string/pref_explain"
+            android:summary="@string/pref_summary_explain" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

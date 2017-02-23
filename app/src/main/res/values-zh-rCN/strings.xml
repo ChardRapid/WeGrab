@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">红包插件</string>
+    <string name="xposed_description">自动抢红包，支持QQ和微信</string>
+    <!--PreferencesUtils WeChat-->
+    <string name="pref_wechat">微信</string>
+    <string name="pref_wechat_open">抢红包</string>
+    <string name="pref_wechat_self">自己发的不抢</string>
+    <string name="pref_wechat_whisper">私聊不抢</string>
+    <string name="pref_wechat_mute">免打扰不抢</string>
+
+    <!--PreferencesUtils QQ-->
+    <string name="pref_qq">QQ</string>
+    <string name="pref_qq_open">抢红包</string>
+    <string name="pref_qq_word">不抢口令红包</string>
+    <string name="pref_qq_self">自己发的不抢</string>
+    <string name="pref_qq_compatible">兼容模式(仅支持6.6.0+)</string>
+
+    <!--PreferencesUtils Hide-->
+    <string name="pref_hide_mode">模块隐藏模式</string>
+    <string name="pref_hide_new">新版隐藏模式</string>
+    <string name="pref_hide_new_summary">新版隐藏模式会对所有*讯应用隐藏此模块以及Xposed Installer的应用程序信息</string>
+    <!--
+    <string name="pref_hide_extreme">极限隐藏模式(需重启)</string>
+    <string name="pref_hide_extreme_summary">极限隐藏模式会对除系统外的应用隐藏此模块以及Xposed Installer的应用信息</string>
+    -->
+    <!--PreferencesUtils More-->
+    <string name="pref_more">更多</string>
+
+    <string name="pref_wechat_version">微信版本</string>
+    <string name="pref_wechat_version_summary">版本：6.3.30(支持该版本)</string>
+
+    <string name="pref_qq_version">QQ版本</string>
+    <string name="pref_qq_version_summary">版本：6.6.0(支持该版本)</string>
+
+    <string name="pref_wechat_tinker">微信问题</string>
+    <string name="pref_wechat_tinker_summary">点击此处解决微信闪退，黑屏等问题(需要Root)</string>
+
+
+    <!--PreferencesUtils About-->
+    <string name="pref_about">关于</string>
+
+    <string name="pref_agreement">协议</string>
+    <string name="pref_summary_agreement">
+        1. 使用此模块需自行承担一切后果，如造成隐私泄露及财产损失等问题，皆与此模块及作者无关！
+        \n2. 此模块可能造成微信和QQ插件检测而被封号/禁抢等问题，请谨慎使用！
+        \n3. 此模块获取途径及使用皆为免费，请勿用于贩卖等违法行为。
+    </string>
+
+    <string name="pref_explain">说明</string>
+    <string name="pref_summary_explain">
+        1. 此模块使用Xposed Hook技术，但不含强行购买/捐赠等恶意代码！
+        \n2. Xposed Module Repository 作为此模块唯一分发途径，请前往获取原版应用和更新！
+        \n3. 程序自带模块隐藏功能，支持微信和QQ的辅助插件检测隐藏(新版隐藏)。
+        \n4. 对于微信和QQ多开问题，因厂商/软件解决方案而异，程序不作适配。
+        \n5. 程序使用GPLv3开源协议。
+    </string>
+
+
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+
+    <string name="supported">版本：%s(支持该版本)</string>
+    <string name="unsupported">版本：%s(不支持该版本)</string>
+    <string name="attention">提示</string>
+    <string name="message">模块未启用，是否重启手机？</string>
+
+    <string name="tips">提示</string>
+    <string name="compatible_message">兼容模式可解决QQ清除缓存不抢以及免打扰不抢等问题。如问题依旧，请关闭此选项。</string>
+
+    <string name="root_message">未取得Root权限！</string>
+    <string name="tinker_message">已解决微信闪退/黑屏等问题。如问题依旧，可清楚微信缓存后重启。</string>
+</resources>
